@@ -10,7 +10,8 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.string :condition
       t.string :details
       t.string :status, default: "available"
-      t.integer :cart_id, :default => nil
+      t.integer :category_id
+      # t.integer :cart_id, :default => nil
 
       t.timestamps
     end
