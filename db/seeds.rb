@@ -29,9 +29,12 @@ Category.create(category_name: "Bag")
 puts "Categories seeded!"
 
 # User.create(name: "", email: "", password: "", location: "", img: "", admin:)
-natali = User.create(name: "Natali Kuk", email: "somerandom@email.com", password: "password", location: "Sammamish", img: "https://cdn2.iconfinder.com/data/icons/people-2-2/128/Female-Avatar-User-Woman-Customer-512.png", admin: true)
-asley = User.create(name: "Ashley", email: "ashleys_email@email.com", password: "password", location: "Bellevue", img: "https://cdn2.iconfinder.com/data/icons/people-2-2/128/Female-Avatar-User-Woman-Customer-512.png", admin: false)
-bella = User.create(name: "Bella White", email: "bellabell@email.com", password: "password", location: "Seattle", admin: false, img: "https://cdn2.iconfinder.com/data/icons/people-2-2/128/Female-Avatar-User-Woman-Customer-512.png", admin: false)
+natali = User.create(name: "Natali Kru", email: "natasha_505@yahoo.com", password: "passw0rd", location: "Sammamish", img: "https://cdn2.iconfinder.com/data/icons/people-2-2/128/Female-Avatar-User-Woman-Customer-512.png", admin: true)
+natalik = User.create(name: "Natali K", email: "tashtash555@gmail.com", password: "passw0rd", location: "Sammamish", img: "https://cdn2.iconfinder.com/data/icons/people-2-2/128/Female-Avatar-User-Woman-Customer-512.png", admin: false)
+
+
+# asley = User.create(name: "Ashley", email: "ashleys_email@email.com", password: "password", location: "Bellevue", img: "https://cdn2.iconfinder.com/data/icons/people-2-2/128/Female-Avatar-User-Woman-Customer-512.png", admin: false)
+# bella = User.create(name: "Bella White", email: "bellabell@email.com", password: "password", location: "Seattle", admin: false, img: "https://cdn2.iconfinder.com/data/icons/people-2-2/128/Female-Avatar-User-Woman-Customer-512.png", admin: false)
 puts "Users Seeded"
 
 # Item.create(name: "", img: "", size: "", brand: "", price:  , color: "", condition: "", details: "", status: "available")
@@ -43,8 +46,8 @@ Item.create(name: "Little Black Dress", img: "https://miro.medium.com/max/5443/1
 Item.create(name: "White Workout Tank", img: "https://miro.medium.com/max/5443/1*ldXKPZTwUX9GfJVYGxiOKw.jpeg", size: "Medium", brand: "Nike", price: 10 , color: "White", condition: "New", details: "Constructed from breathable jersey fabric, the Nike Air Tank helps keep you cool while you conquer your miles. The Nike Air detail lends an iconic look, while stretch fabric and wide armholes let you move naturally during runs. 79% polyester/21% spandex.", category_id: 3)
 
 # Cart.create(total: , user_id: , item_id: , complete: )
-cart1 = Cart.create(user_id: 2, item_id: 2)
-cart2 = Cart.create(total: 70, user_id: 2, item_id: 1, complete: true)
+cart1 = Cart.create(user_id: 1, item_id: 2)
+cart2 = Cart.create(total: 70, user_id: 1, item_id: 1, complete: true)
 puts "Cart seeded!"
 
 # # ItemCategory.create(item_id: , category_id: )

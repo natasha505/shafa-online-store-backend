@@ -11,7 +11,8 @@ class UsersController < ApplicationController
   end 
 
   def create
-    @user = User.create(user_params)
+    @user = User.find_or_create_by(user_params)
+    @user.save
     render :json => @user
   end 
 
@@ -21,11 +22,11 @@ class UsersController < ApplicationController
     render :json => @user
   end 
 
-  def destroy
-    @user = User.find(params[:id])
-    @user.destroy
-    render :json {status: "User Deleted"}
-  end 
+  # def destroy
+  #   @user = User.find(params[:id])
+  #   @user.destroy
+  #   render :json {status: "User Deleted"}
+  # end 
 
 
   private
