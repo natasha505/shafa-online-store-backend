@@ -29,7 +29,7 @@ Category.create(category_name: "Bag")
 puts "Categories seeded!"
 
 # User.create(name: "", email: "", password: "", location: "", img: "", admin:)
-# User.create(id: 1, name: "Natali Kru", email: "natasha_505@yahoo.com", password: "passw0rd", location: "Sammamish", img: "https://cdn2.iconfinder.com/data/icons/people-2-2/128/Female-Avatar-User-Woman-Customer-512.png", admin: true)
+# User.create(id: 1, name: "Natali Kru", email: "natasha_505@yahoo.com", password: "", location: "Sammamish", img: "", admin: true)
 # User.create(id: 2, name: "Natali K", email: "tashtash555@gmail.com", password: "passw0rd", location: "Sammamish", img: "https://cdn2.iconfinder.com/data/icons/people-2-2/128/Female-Avatar-User-Woman-Customer-512.png", admin: false)
 
 

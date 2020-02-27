@@ -20,6 +20,10 @@ class CartsController < ApplicationController
     render :json => @cart
   end 
 
+  def getUserCarts
+    @carts = Cart.where(user_id: params[:id])
+    render :json => @carts
+  end 
 
   private
 
