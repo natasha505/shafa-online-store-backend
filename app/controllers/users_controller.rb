@@ -12,13 +12,21 @@ class UsersController < ApplicationController
 
   def create
     @user = User.find_or_create_by(user_params)
-    @user.save
-    render :json => @user
+
+    if @user && @user.save
+      render :json => @user
+    else
+      render :json => User.find_by(email: user_params[:email])
+    end
+    # @user.save
+    # @user = User.find_by(email: user_params[:email])
+    # render :json => @user
   end 
 
   def update
     @user = user.find(params[:id])
     @user.update(user_params)
+    puts @user
     render :json => @user
   end 
 
