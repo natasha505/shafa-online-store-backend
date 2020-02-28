@@ -19,8 +19,11 @@ class CartsController < ApplicationController
     end
   end 
 
+  # Item.find(Cart.find(1).item_id).status
   def update
-    @cart = Cart.find(params[:id])
+    @cart = Cart.find(params[:id])  # --> 1
+    @item = Item.find(@cart.item_id)   # --> 4
+    @item.update(status: "pending")
     @cart.update(cart_params) #complete: --> true
     render :json => @cart
   end 
