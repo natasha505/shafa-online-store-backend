@@ -10,6 +10,11 @@ class ItemsController < ApplicationController
     render :json => @items
   end 
 
+  def getAvailableItems
+    @items = Item.where(status: "available")
+    render :json => @items
+  end 
+
   def create
     @item = Item.create(item_params)
     render :json => @item

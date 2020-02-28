@@ -10,8 +10,13 @@ class CartsController < ApplicationController
   end 
 
   def create
-    @cart = Cart.create(cart_params)
-    render :json => @cart 
+    @cart = Cart.find_by(cart_params)
+    if !! @cart
+      render json: {error: "You already have this item, silly goose"}
+    else
+      @cart = Cart.create(cart_params)
+      render :json => @cart 
+    end
   end 
 
   def update
@@ -21,7 +26,7 @@ class CartsController < ApplicationController
   end 
 
   def getUserCarts
-    @carts = Cart.where(user_id: params[:id])
+    @carts = Cart.where(user_id: params[:id], complete: false)
     render :json => @carts
   end 
 
