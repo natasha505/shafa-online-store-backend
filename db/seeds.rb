@@ -45,8 +45,12 @@ Item.create(name: "High-Collar Wool Coat", img: "https://miro.medium.com/max/544
 # status: "unavailable"
 Item.create(name: "Nike Sportswear Leggings", img: "https://miro.medium.com/max/5443/1*8PZJx6bW_spDx7Kp_ksW9w.jpeg", size: "Medium", brand: "Nike", price: 20 , color: "Black", condition: "New", details: "Slip into high-waisted coverage with the Nike Sportswear Club Leggings. Featuring a bold Swoosh design. They're crafted for all-day comfort. Tight fit for a body-hugging feel. 61% cotton/33% polyester/6% spandex.", category_id: 2)
 Item.create(name: "Little Black Dress", img: "https://miro.medium.com/max/5443/1*RgsQhMTEPNlMAjqE_Yof-Q.jpeg", size: "4", brand: "Cinq a Sept", price: 120 , color: "Black", condition: "Lightly Worn", details: "Off-the-shoulder midi dress with ruffled hem. Hidden zipper on back. 69% Triacetate 31% Polyester.", category_id: 4)
-Item.create(name: "White Workout Tank", img: "https://miro.medium.com/max/5443/1*ldXKPZTwUX9GfJVYGxiOKw.jpeg", size: "Medium", brand: "Nike", price: 10 , color: "White", condition: "New", details: "Constructed from breathable jersey fabric, the Nike Air Tank helps keep you cool while you conquer your miles. The Nike Air detail lends an iconic look, while stretch fabric and wide armholes let you move naturally during runs. 79% polyester/21% spandex.", category_id: 3)
+Item.create(name: "White Workout Tank", img: "https://shafa-store-project.s3-us-west-2.amazonaws.com/20190415_130400.jpg
+  ", size: "Medium", brand: "Nike", price: 10 , color: "White", condition: "New", details: "Constructed from breathable jersey fabric, the Nike Air Tank helps keep you cool while you conquer your miles. The Nike Air detail lends an iconic look, while stretch fabric and wide armholes let you move naturally during runs. 79% polyester/21% spandex.", category_id: 3)
 
+
+# https://miro.medium.com/max/5443/1*ldXKPZTwUX9GfJVYGxiOKw.jpeg
+# https://shafa-store-project.s3-us-west-2.amazonaws.com/20190415_130400.jpg
 # Cart.create(total: , user_id: , item_id: , complete: )
 # Cart.create(user_id: 1, item_id: 2)
 # Cart.create(total: 70, user_id: 1, item_id: 1, complete: true)
