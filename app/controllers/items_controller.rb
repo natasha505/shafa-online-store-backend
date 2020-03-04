@@ -23,11 +23,17 @@ class ItemsController < ApplicationController
     for item in @items do
       for cart in item.carts do
         @user = User.find(cart.user_id)
-        @output << {user_email: @user.email, item: item }
+        @output << {user: @user, item: item, cart_id: cart.id }
       end
     end
     render :json => @output
   end 
+
+
+
+
+
+
 
   def create
     @item = Item.create(item_params)
