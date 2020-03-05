@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :users
 
   get 'usercarts/:id', to: 'carts#getUserCarts', as: 'usercarts'
+  get 'truecarts/:id', to: 'carts#getTrueCarts', as: 'truecarts'
   get 'availableitems', to: 'items#getAvailableItems', as: 'availableitems'
   get 'pendingitems', to: 'items#getPendingItemInfo', as: 'pendingitems'
 

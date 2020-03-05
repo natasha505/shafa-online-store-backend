@@ -34,6 +34,11 @@ class CartsController < ApplicationController
     render :json => @carts
   end 
 
+  def getTrueCarts
+    @carts = Cart.where(user_id: params[:id], complete: true)
+    render :json => @carts
+  end 
+
   def destroy
     @cart = Cart.find(params[:id])
     @temp = @cart
